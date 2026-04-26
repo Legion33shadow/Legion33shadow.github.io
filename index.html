@@ -3,166 +3,234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="LEGION Tech — Guides gratuits IA, Python, Cybersécurité, Revenus Passifs. Outils premium et bots Telegram.">
-<meta name="keywords" content="ia, python, cybersecurite, revenus passifs, automatisation, bots telegram, intelligence artificielle">
-<meta name="robots" content="index,follow">
+<meta name="description" content="LEGION Tech — Guides gratuits sur l'IA, Python, Cybersécurité et Revenus Passifs Tech. Ressources pratiques et outils premium.">
+<meta name="keywords" content="intelligence artificielle, python automatisation, cybersecurite, revenus passifs, bots telegram, github pages, ia decentralise">
+<meta name="author" content="LEGION Tech">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta property="og:title" content="LEGION Tech — IA, Python, Cyber, Revenus Passifs">
-<meta property="og:url" content="https://Legion33shadow.github.io">
-<link rel="canonical" href="https://Legion33shadow.github.io">
-<title>LEGION Tech — IA, Python, Cyber, Revenus Passifs</title>
+<meta property="og:description" content="Guides pratiques gratuits sur l'IA, la cybersécurité, Python et les revenus passifs tech.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://legion33shadow.github.io">
+<meta property="og:locale" content="fr_FR">
+<link rel="canonical" href="https://legion33shadow.github.io">
+<title>LEGION Tech — IA, Python, Cybersécurité, Revenus Passifs</title>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5382997898313669" crossorigin="anonymous"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.7}
-a{text-decoration:none}
-header{background:#0f172a;padding:16px 28px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      background:#f8fafc;color:#1e293b;line-height:1.75;font-size:16px}
+a{text-decoration:none;color:inherit}
+header{background:#0f172a;padding:16px 28px;display:flex;justify-content:space-between;
+        align-items:center;position:sticky;top:0;z-index:99;box-shadow:0 2px 10px rgba(0,0,0,.4)}
 .logo{color:#22d3ee;font-weight:800;font-size:1.15em}
 nav a{color:#94a3b8;margin-left:20px;font-size:.9em;transition:color .2s}
 nav a:hover{color:#fff}
-.hero{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 55%,#312e81 100%);color:#fff;padding:80px 24px;text-align:center}
-.hero h1{font-size:clamp(2em,5vw,3.2em);font-weight:900;margin-bottom:14px}
-.hero p{color:#94a3b8;font-size:1.05em;max-width:580px;margin:0 auto 30px}
-.btn{display:inline-block;padding:13px 28px;border-radius:8px;font-weight:700;margin:6px;font-size:.95em;transition:.2s}
+.hero{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 55%,#312e81 100%);
+       color:#fff;padding:80px 24px;text-align:center}
+.hero h1{font-size:clamp(2em,5vw,3.2em);font-weight:900;margin-bottom:16px;line-height:1.15}
+.hero p{color:#94a3b8;font-size:1.05em;max-width:600px;margin:0 auto 32px;line-height:1.7}
+.btn{display:inline-block;padding:13px 30px;border-radius:8px;font-weight:700;
+      margin:6px;font-size:.95em;transition:.2s;cursor:pointer}
 .bp{background:#6366f1;color:#fff}.bp:hover{background:#4f46e5}
 .bo{border:2px solid #22d3ee;color:#22d3ee}.bo:hover{background:#22d3ee;color:#0f172a}
-.stats{display:flex;justify-content:center;gap:44px;margin-top:40px;flex-wrap:wrap}
-.stat .n{font-size:2.3em;font-weight:900;color:#22d3ee}
-.stat .l{color:#94a3b8;font-size:.85em}
-section{max-width:1100px;margin:56px auto;padding:0 22px}
-section h2{font-size:1.65em;font-weight:800;color:#0f172a;margin-bottom:8px}
-.sub{color:#64748b;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:22px}
-.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;display:block;color:inherit;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.1);border-color:#6366f1}
-.ic{font-size:2em;margin-bottom:9px}
-.cat{font-size:.71em;color:#6366f1;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:9px}
-.card h3{font-size:1em;font-weight:700;color:#0f172a;line-height:1.3;margin-bottom:7px}
-.card p{font-size:.83em;color:#64748b;line-height:1.5}
-.more{color:#6366f1;font-size:.82em;font-weight:600;margin-top:12px;display:block}
-.cta{background:#0f172a;color:#fff;padding:56px 24px;text-align:center;margin-top:56px}
-.cta h2{font-size:1.8em;font-weight:800;margin-bottom:12px}
-.cta p{color:#94a3b8;margin-bottom:28px}
-.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px;max-width:560px;margin:28px auto 0}
-.pc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:20px;text-align:center}
-.pc .i{font-size:1.9em;margin-bottom:7px}
-.pc h4{color:#fff;font-size:.88em;margin-bottom:4px}
-.pc p{color:#94a3b8;font-size:.77em;margin-bottom:9px}
-.pc code{font-size:.62em;color:#22d3ee;word-break:break-all;display:block;margin:5px 0}
-footer{background:#0a0f1e;color:#64748b;padding:28px 24px;text-align:center;font-size:.82em}
+.stats{display:flex;justify-content:center;gap:44px;margin-top:44px;flex-wrap:wrap}
+.stat .n{font-size:2.4em;font-weight:900;color:#22d3ee}
+.stat .l{color:#94a3b8;font-size:.85em;margin-top:4px}
+.section{max-width:1100px;margin:64px auto;padding:0 24px}
+.section h2{font-size:1.7em;font-weight:800;color:#0f172a;margin-bottom:10px}
+.section p.sub{color:#64748b;margin-bottom:32px;font-size:.97em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:26px;
+       display:block;color:inherit;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 48px rgba(0,0,0,.1);
+             border-color:#6366f1}
+.card .ic{font-size:2.2em;margin-bottom:10px}
+.card .cat{font-size:.71em;color:#6366f1;font-weight:700;text-transform:uppercase;
+            letter-spacing:1.5px;margin-bottom:10px}
+.card h3{font-size:1.02em;font-weight:700;color:#0f172a;line-height:1.3;margin-bottom:8px}
+.card p{font-size:.84em;color:#64748b;line-height:1.55}
+.more{color:#6366f1;font-size:.83em;font-weight:600;margin-top:14px;display:block}
+.intro{background:#fff;border-radius:16px;padding:40px;margin:0 auto 48px;
+        max-width:1100px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.intro h2{font-size:1.5em;font-weight:800;color:#0f172a;margin-bottom:16px}
+.intro p{color:#475569;margin-bottom:12px;line-height:1.75}
+.cta{background:#0f172a;color:#fff;padding:56px 24px;text-align:center}
+.cta h2{font-size:1.85em;font-weight:800;margin-bottom:14px}
+.cta p{color:#94a3b8;margin-bottom:30px;max-width:560px;margin-left:auto;margin-right:auto}
+.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+      gap:14px;max-width:580px;margin:30px auto 0}
+.pc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+     border-radius:10px;padding:22px;text-align:center}
+.pc .i{font-size:2em;margin-bottom:8px}
+.pc h4{color:#fff;font-size:.9em;margin-bottom:5px}
+.pc p{color:#94a3b8;font-size:.78em;margin-bottom:10px;line-height:1.4}
+.pc code{font-size:.6em;color:#22d3ee;word-break:break-all;display:block;margin:5px 0}
+footer{background:#0a0f1e;color:#64748b;padding:32px 24px;text-align:center;font-size:.82em}
 footer a{color:#22d3ee}
-@media(max-width:600px){.btn{display:block;margin:8px 0}.stats{gap:24px}}
+footer p+p{margin-top:8px}
+@media(max-width:640px){.hero h1{font-size:1.7em}.btn{display:block;margin:8px 0}
+  .stats{gap:24px}.intro{padding:24px}}
 </style>
 </head>
 <body>
+
 <header>
   <a href="/" class="logo">🧠 LEGION Tech</a>
   <nav>
     <a href="#guides">Guides</a>
+    <a href="#about">À propos</a>
     <a href="https://gumroad.com/Legion33shadow" target="_blank">Boutique</a>
     <a href="https://t.me/LegionStoreBot" target="_blank">Telegram</a>
   </nav>
 </header>
+
 <div class="hero">
   <h1>🧠 LEGION Tech</h1>
-  <p>Guides pratiques gratuits sur l'IA, la cybersécurité, Python et les revenus passifs tech.</p>
-  <a href="#guides" class="btn bp">📚 Guides gratuits</a>
+  <p>Guides pratiques gratuits sur l'intelligence artificielle, la cybersécurité,
+     Python et les revenus passifs tech. Des ressources concrètes pour 2025.</p>
+  <a href="#guides" class="btn bp">📚 Voir les guides gratuits</a>
   <a href="https://gumroad.com/Legion33shadow" class="btn bo" target="_blank">🛒 Boutique Premium</a>
   <div class="stats">
     <div class="stat"><div class="n">10</div><div class="l">Guides publiés</div></div>
-    <div class="stat"><div class="n">1.35M</div><div class="l">Neurones IA</div></div>
+    <div class="stat"><div class="n">1.35M</div><div class="l">Données indexées</div></div>
     <div class="stat"><div class="n">100%</div><div class="l">Gratuit</div></div>
   </div>
 </div>
-<section id="guides">
+
+<div style="max-width:1100px;margin:48px auto;padding:0 24px" id="about">
+  <div class="intro">
+    <h2>🤖 Qu'est-ce que LEGION Tech ?</h2>
+    <p>LEGION Tech est une plateforme de ressources techniques gratuite dédiée à
+       l'intelligence artificielle décentralisée, la cybersécurité, l'automatisation
+       Python et les stratégies de revenus passifs tech.</p>
+    <p>Notre approche est simple : des guides pratiques, concrets, immédiatement
+       applicables. Pas de théorie creuse — uniquement ce qui fonctionne en 2025.</p>
+    <p>Chaque guide est rédigé et optimisé par notre système LEGION AI, un réseau
+       d'agents spécialisés fonctionnant sur 1,35 million de données structurées.
+       Résultat : un contenu précis, à jour, et adapté aux besoins réels.</p>
+  </div>
+</div>
+
+<div class="section" id="guides">
   <h2>📚 Guides Gratuits</h2>
-  <p class="sub">Ressources pratiques mises à jour par LEGION AI</p>
+  <p class="sub">Ressources pratiques mises à jour régulièrement par LEGION AI — 26 April 2026</p>
   <div class="grid">
+
     <a href="guides/creer-bot-telegram-python-2025.html" class="card">
-      <div class="ic">🤖</div>
-      <div class="cat">Tech</div>
+      <div class="ic">🤖</div><div class="cat">Tech</div>
       <h3>Créer un Bot Telegram avec Python en 2025</h3>
-      <p>Bot telegram python — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>Tutoriel complet : installation de python-telegram-bot, handlers,
+         déploiement sur serveur, monétisation par abonnements.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/revenus-passifs-tech-2025.html" class="card">
-      <div class="ic">💰</div>
-      <div class="cat">Business</div>
+      <div class="ic">💰</div><div class="cat">Business</div>
       <h3>10 Revenus Passifs Tech à Lancer en 2025</h3>
-      <p>Revenus passifs internet — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>HoneyGain, EarnApp, PacketStream, GitHub Pages AdSense,
+         bots Telegram monétisés — guide complet et comparatif.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/intelligence-artificielle-debutants.html" class="card">
-      <div class="ic">🧠</div>
-      <div class="cat">IA</div>
+      <div class="ic">🧠</div><div class="cat">IA</div>
       <h3>Intelligence Artificielle pour Débutants 2025</h3>
-      <p>Intelligence artificielle debutant — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>De zéro à opérationnel : LLM, API Groq, prompt engineering,
+         bots IA, automatisation. Guide pratique et accessible.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/automatiser-revenus-bots-telegram.html" class="card">
-      <div class="ic">⚡</div>
-      <div class="cat">Business</div>
+      <div class="ic">⚡</div><div class="cat">Business</div>
       <h3>Automatiser ses Revenus avec des Bots Telegram</h3>
-      <p>Automatisation revenus — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>Créer des bots Telegram rentables : abonnements Stripe,
+         vente de produits digitaux, collecte de leads automatisée.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/cybersecurite-bases-pratiques-2025.html" class="card">
-      <div class="ic">🔐</div>
-      <div class="cat">Cyber</div>
-      <h3>Cybersécurité : Bases Pratiques 2025</h3>
-      <p>Cybersecurite debutant — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <div class="ic">🔐</div><div class="cat">Cyber</div>
+      <h3>Cybersécurité : Bases Pratiques pour 2025</h3>
+      <p>Outils essentiels, méthodes de protection, bases du pentest
+         éthique. Guide concret pour particuliers et professionnels.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/prompt-engineering-guide-2025.html" class="card">
-      <div class="ic">✍️</div>
-      <div class="cat">IA</div>
+      <div class="ic">✍️</div><div class="cat">IA</div>
       <h3>Prompt Engineering : Maîtriser les IA en 2025</h3>
-      <p>Prompt engineering — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>Techniques avancées pour GPT-4, Claude, Groq, Llama.
+         Chain-of-thought, few-shot learning, prompts systèmes.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/python-scripts-automatisation.html" class="card">
-      <div class="ic">🐍</div>
-      <div class="cat">Tech</div>
+      <div class="ic">🐍</div><div class="cat">Tech</div>
       <h3>Python : 20 Scripts d'Automatisation Gratuits</h3>
-      <p>Python automatisation — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>Scripts prêts à l'emploi pour automatiser emails, fichiers,
+         web scraping, notifications Telegram, monitoring système.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/monetiser-bot-telegram.html" class="card">
-      <div class="ic">🛒</div>
-      <div class="cat">Business</div>
+      <div class="ic">🛒</div><div class="cat">Business</div>
       <h3>Monétiser un Bot Telegram : Guide Complet 2025</h3>
-      <p>Monetiser bot telegram — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>Toutes les méthodes : accès payant, Gumroad, crypto,
+         abonnements récurrents. Exemples concrets et chiffres réels.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/github-pages-site-gratuit.html" class="card">
-      <div class="ic">🌐</div>
-      <div class="cat">Tech</div>
+      <div class="ic">🌐</div><div class="cat">Tech</div>
       <h3>Créer un Site Gratuit avec GitHub Pages</h3>
-      <p>Github pages tutoriel — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
+      <p>Hébergement gratuit illimité, domaine custom, SEO optimisé,
+         intégration AdSense. De zéro à en ligne en 30 minutes.</p>
+      <span class="more">Lire le guide complet →</span>
     </a>
+
     <a href="guides/ia-decentralisee-futur.html" class="card">
-      <div class="ic">🕸️</div>
-      <div class="cat">IA</div>
+      <div class="ic">🕸️</div><div class="cat">IA</div>
       <h3>L'IA Décentralisée : L'Avenir de la Tech</h3>
-      <p>Ia decentralisee — guide complet et pratique.</p>
-      <span class="more">Lire le guide →</span>
-    </a></div>
-</section>
+      <p>Pourquoi les systèmes d'IA distribués vont dépasser les grands
+         modèles centralisés. Architecture, exemples, perspectives 2025.</p>
+      <span class="more">Lire le guide complet →</span>
+    </a>
+
+  </div>
+</div>
+
 <div class="cta">
   <h2>🚀 Outils Premium LEGION</h2>
-  <p>Scripts Python • Bots Telegram • Templates automation • Accès immédiat</p>
+  <p>Scripts Python prêts à l'emploi, bots Telegram configurés,
+     templates automation et accès à notre communauté privée.</p>
   <a href="https://gumroad.com/Legion33shadow" class="btn bp" target="_blank">🛒 Boutique Gumroad</a>
   <a href="https://t.me/LegionStoreBot" class="btn bo" target="_blank">📱 Bot Telegram</a>
   <div class="pay">
-    <div class="pc"><div class="i">💳</div><h4>Revolut</h4><p>Virement instantané</p><a href="revolut.me/shadowrio" class="btn bp" style="padding:7px 16px;font-size:.82em" target="_blank">Payer</a></div>
-    <div class="pc"><div class="i">🦊</div><h4>Crypto ETH/USDT</h4><p>MetaMask / EVM wallet</p><code>0xD38bab59af0c4a933003...</code></div>
-    <div class="pc"><div class="i">🛒</div><h4>Gumroad</h4><p>Carte bancaire sécurisée</p><a href="https://gumroad.com/Legion33shadow" class="btn bp" style="padding:7px 16px;font-size:.82em" target="_blank">Boutique</a></div>
+    <div class="pc">
+      <div class="i">💳</div><h4>Revolut</h4>
+      <p>Virement instantané, sans frais de transaction</p>
+      <a href="revolut.me/shadowrio" class="btn bp" style="padding:8px 16px;font-size:.82em" target="_blank">Payer via Revolut</a>
+    </div>
+    <div class="pc">
+      <div class="i">🦊</div><h4>Crypto ETH / USDT</h4>
+      <p>MetaMask ou tout wallet compatible EVM</p>
+      <code>0xD38bab59af0c4a933003...</code>
+    </div>
+    <div class="pc">
+      <div class="i">🛒</div><h4>Gumroad</h4>
+      <p>Paiement par carte bancaire sécurisé</p>
+      <a href="https://gumroad.com/Legion33shadow" class="btn bp" style="padding:8px 16px;font-size:.82em" target="_blank">Voir la boutique</a>
+    </div>
   </div>
 </div>
+
 <footer>
   <p>© 2025 <a href="/">LEGION Tech</a> &nbsp;·&nbsp;
      <a href="https://gumroad.com/Legion33shadow" target="_blank">Boutique Gumroad</a> &nbsp;·&nbsp;
-     <a href="https://t.me/LegionStoreBot" target="_blank">Telegram</a></p>
-  <p style="margin-top:6px;font-size:.78em">Powered by LEGION Swarm AI</p>
+     <a href="https://t.me/LegionStoreBot" target="_blank">Telegram</a> &nbsp;·&nbsp;
+     <a href="/sitemap.xml">Sitemap</a></p>
+  <p>Plateforme propulsée par LEGION Swarm AI — Intelligence Artificielle Décentralisée</p>
 </footer>
-</body></html>
+
+</body>
+</html>
