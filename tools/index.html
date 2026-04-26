@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="La plus grande collection de générateurs gratuits : noms, idées, cocktails, défis, voyages et bien plus. En français, arabe, indonésien.">
+<meta name="keywords" content="generateur gratuit, generateur noms, generateur idees, outils generateur en ligne, tools generator">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="OMNI-GEN — Tous les Générateurs Gratuits 2026">
+<meta property="og:description" content="La plus grande collection de générateurs gratuits : noms, idées, cocktails, défis, voyages et bien plus. En français, arabe, indonésien.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://legion33shadow.github.io/tools/">
+<link rel="canonical" href="https://legion33shadow.github.io/tools/">
+<title>OMNI-GEN — Tous les Générateurs Gratuits 2026</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5382997898313669" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#0d0d0d;--card:#161616;--border:#2a2a2a;--accent:#7c3aed;
+      --accent2:#06b6d4;--text:#f1f5f9;--muted:#94a3b8;--green:#10b981}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+     background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{background:rgba(13,13,13,.95);border-bottom:1px solid var(--border);
+       padding:14px 24px;display:flex;justify-content:space-between;align-items:center;
+       position:sticky;top:0;z-index:99;backdrop-filter:blur(10px)}
+.logo{color:var(--accent2);font-weight:900;font-size:1.1em;letter-spacing:-0.5px}
+nav a{color:var(--muted);margin-left:20px;font-size:.88em;transition:color .2s}
+nav a:hover{color:var(--text)}
+.hero{padding:60px 24px;text-align:center;max-width:800px;margin:0 auto}
+.hero h1{font-size:clamp(1.8em,5vw,3em);font-weight:900;margin-bottom:14px;
+         background:linear-gradient(135deg,var(--accent2),var(--accent));
+         -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);font-size:1.05em;max-width:550px;margin:0 auto 28px}
+.gen-box{background:var(--card);border:1px solid var(--border);border-radius:16px;
+         padding:32px;max-width:700px;margin:0 auto 40px;position:relative}
+.gen-box::before{content:'';position:absolute;top:-1px;left:30px;right:30px;height:2px;
+                 background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px}
+.btn-generate{width:100%;padding:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+              color:#fff;border:none;border-radius:10px;font-size:1.1em;font-weight:700;
+              cursor:pointer;transition:.2s;margin-top:16px}
+.btn-generate:hover{opacity:.9;transform:translateY(-1px)}
+.btn-generate:active{transform:translateY(0)}
+.result-box{background:rgba(6,182,212,.08);border:1px solid rgba(6,182,212,.2);
+            border-radius:10px;padding:20px;margin-top:20px;min-height:80px;
+            font-size:1.15em;font-weight:600;text-align:center;color:var(--text);
+            display:none;word-break:break-word}
+.result-box.show{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+select,input{width:100%;padding:10px 14px;background:rgba(255,255,255,.05);
+             border:1px solid var(--border);border-radius:8px;color:var(--text);
+             font-size:.95em;outline:none;transition:border-color .2s}
+select:focus,input:focus{border-color:var(--accent)}
+.categories{max-width:1100px;margin:0 auto;padding:0 22px 60px}
+.categories h2{font-size:1.4em;font-weight:800;margin-bottom:24px;color:var(--text)}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.cat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;
+          padding:20px;display:block;color:inherit;transition:.2s}
+.cat-card:hover{border-color:var(--accent);transform:translateY(-3px);
+                box-shadow:0 8px 30px rgba(124,58,237,.15)}
+.cat-card .ic{font-size:2em;margin-bottom:10px}
+.cat-card h3{font-size:.95em;font-weight:700;color:var(--text);margin-bottom:6px}
+.cat-card p{font-size:.82em;color:var(--muted);line-height:1.45}
+.badge{display:inline-block;padding:3px 10px;background:rgba(16,185,129,.15);
+       color:var(--green);border-radius:20px;font-size:.75em;font-weight:600;margin-bottom:8px}
+.copy-btn{background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);
+          color:var(--accent);padding:8px 18px;border-radius:8px;cursor:pointer;
+          font-size:.85em;font-weight:600;transition:.2s;margin-top:12px}
+.copy-btn:hover{background:rgba(124,58,237,.3)}
+footer{background:rgba(13,13,13,.8);border-top:1px solid var(--border);
+       padding:24px;text-align:center;color:var(--muted);font-size:.82em}
+footer a{color:var(--accent2)}
+.counter{color:var(--muted);font-size:.82em;margin-top:8px}
+@media(max-width:640px){.hero h1{font-size:1.6em}.gen-box{padding:20px}.options{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <a href="https://legion33shadow.github.io/tools/" class="logo">⚡ OMNI-GEN</a>
+  <nav>
+    <a href="https://legion33shadow.github.io">← Retour</a>
+    <a href="https://legion33shadow.github.io/tools/">Tous les outils</a>
+    <a href="https://gumroad.com/Legion33shadow" target="_blank">Premium</a>
+  </nav>
+</header>
+<div class="hero">
+  <h1>⚡ OMNI-GEN</h1>
+  <p>La collection ultime de générateurs gratuits.<br>
+     Noms, idées, recettes, défis, voyages — en plusieurs langues.</p>
+  <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px">
+    <span style="background:rgba(124,58,237,.2);color:var(--accent);padding:5px 14px;border-radius:20px;font-size:.85em">🇫🇷 Français</span>
+    <span style="background:rgba(6,182,212,.2);color:var(--accent2);padding:5px 14px;border-radius:20px;font-size:.85em">🇮🇩 Indonesia</span>
+    <span style="background:rgba(16,185,129,.2);color:var(--green);padding:5px 14px;border-radius:20px;font-size:.85em">🇸🇦 عربي</span>
+    <span style="background:rgba(124,58,237,.1);color:var(--muted);padding:5px 14px;border-radius:20px;font-size:.85em">+ bientôt</span>
+  </div>
+</div>
+<div class="categories">
+  <h2>🇫🇷 Générateurs Français</h2>
+  <div class="cat-grid">
+    <a href="https://legion33shadow.github.io/tools/generateur-noms-chats.html" class="cat-card">
+      <div class="ic">🐱</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Noms pour Chats — 500 idées originales</h3>
+      <p>Trouvez le nom parfait pour votre chat ! Générateur gratuit de noms de chats originaux, mi...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-noms-chiens.html" class="cat-card">
+      <div class="ic">🐶</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Noms pour Chiens — 600 idées</h3>
+      <p>Nom parfait pour votre chien ! Générateur gratuit : noms originaux, drôles, heroïques ou m...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-idees-voyages.html" class="cat-card">
+      <div class="ic">✈️</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Destinations de Voyage Insolites 2026</h3>
+      <p>Découvrez des destinations de voyage uniques et insolites ! Générateur gratuit pour voyage...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-phrases-drague.html" class="cat-card">
+      <div class="ic">💘</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Phrases pour Draguer — 200 répliques</h3>
+      <p>Les meilleures phrases pour briser la glace et séduire avec humour et originalité. Générat...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-blagues-enfants.html" class="cat-card">
+      <div class="ic">😂</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Blagues pour Enfants — 300 blagues drôles</h3>
+      <p>Les meilleures blagues pour enfants ! Drôles, innocentes et parfaites pour faire rire tout...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-defi-amis.html" class="cat-card">
+      <div class="ic">🎯</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Défis entre Amis — 200 défis fous</h3>
+      <p>Défis fous, drôles et inoubliables pour animer vos soirées entre amis. Générateur de chall...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-activites-ennui.html" class="cat-card">
+      <div class="ic">💡</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur d'Activités quand on s'Ennuie — 150 idées</h3>
+      <p>Plus jamais d'ennui ! Générateur d'activités créatives, seul ou en groupe, à la maison ou ...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-strategies-zombie.html" class="cat-card">
+      <div class="ic">🧟</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Stratégies Anti-Zombie — Plan de Survie</h3>
+      <p>En cas d'attaque de zombies, que faire ? Générateur de stratégies de survie hilarantes et ...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-cocktails-maison.html" class="cat-card">
+      <div class="ic">🍹</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur de Recettes de Cocktails — 100 recettes originale</h3>
+      <p>Créez des cocktails originaux avec les ingrédients que vous avez ! Générateur de recettes ...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/tools/generateur-idees-business.html" class="cat-card">
+      <div class="ic">💼</div>
+      <div class="badge">GRATUIT</div>
+      <h3>Générateur d'Idées Business — 200 concepts rentables 2026</h3>
+      <p>Trouvez votre prochaine idée business rentable ! Générateur de concepts innovants pour ent...</p>
+    </a></div>
+  <h2 style="margin-top:48px">🇮🇩 Generator Indonesia</h2>
+  <div class="cat-grid">
+    <a href="https://legion33shadow.github.io/id/generator-nama-kucing.html" class="cat-card">
+      <div class="ic">🐱</div>
+      <div class="badge">🇮🇩 GRATIS</div>
+      <h3>Generator Nama Kucing — 500 Nama Unik dan Lucu 2026</h3>
+      <p>Temukan nama sempurna untuk kucing Anda! Generator nama kucing gratis: lucu, elegan, Jepan...</p>
+    </a>
+    <a href="https://legion33shadow.github.io/id/generator-ide-bisnis.html" class="cat-card">
+      <div class="ic">💼</div>
+      <div class="badge">🇮🇩 GRATIS</div>
+      <h3>Generator Ide Bisnis — 200 Konsep Menguntungkan 2026</h3>
+      <p>Temukan ide bisnis menguntungkan berikutnya! Generator konsep inovatif untuk wirausahawan ...</p>
+    </a></div>
+  <h2 style="margin-top:48px" dir="rtl">🇸🇦 مولّدات عربية</h2>
+  <div class="cat-grid" dir="rtl">
+    <a href="https://legion33shadow.github.io/ar/mohawwil-asma-qitat.html" class="cat-card">
+      <div class="ic">🐱</div>
+      <div class="badge">🇸🇦 مجاني</div>
+      <h3>مولّد أسماء القطط — 500 اسم مميز 2026</h3>
+      <p>اعثر على الاسم المثالي لقطتك! مولّد مجاني لأسماء القطط: جميلة، أنيقة، أو مرحة....</p>
+    </a>
+    <a href="https://legion33shadow.github.io/ar/mohawwil-afkar-amal.html" class="cat-card">
+      <div class="ic">💼</div>
+      <div class="badge">🇸🇦 مجاني</div>
+      <h3>مولّد أفكار أعمال — 200 فكرة مربحة 2026</h3>
+      <p>اكتشف فكرة عملك الرابحة التالية! مولّد مجاني لمفاهيم مبتكرة لرواد الأعمال العرب....</p>
+    </a></div>
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;text-align:center;margin-top:48px">
+    <h3 style="font-size:1.2em;margin-bottom:10px">🚀 Vous voulez plus ?</h3>
+    <p style="color:var(--muted);margin-bottom:20px">Scripts, bots Telegram, templates premium — livrés instantanément.</p>
+    <a href="https://gumroad.com/Legion33shadow" class="btn-generate" style="display:inline-block;width:auto;padding:12px 28px" target="_blank">🛒 Boutique Premium</a>
+  </div>
+</div>
+<footer>
+  <p>© 2026 <a href="https://legion33shadow.github.io">LEGION Tech</a> — OMNI-GEN Tools &nbsp;·&nbsp;
+     <a href="https://gumroad.com/Legion33shadow" target="_blank">Produits Premium</a> &nbsp;·&nbsp;
+     <a href="https://legion33shadow.github.io/sitemap.xml">Sitemap</a></p>
+  <p style="margin-top:6px">Propulsé par LEGION Swarm AI — 2026</p>
+</footer>
+</body></html>
